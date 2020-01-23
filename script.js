@@ -41,6 +41,264 @@ function update() {
 }
 
 setInterval(update, 1000);
+
+renderList()
+
+$(document).on("click", ".1", function () {
+    
+    $('.A').each(function () {
+        var html = $(this).html();
+        var input = $('<input></input>');
+        input.val(html);
+        input.attr("id", "push")
+        $(this).html(input);
+
+        $(".1").addClass("AA");
+        $(".1").removeClass("1");
+
+        $(document).on("click", ".AA", function() {
+    
+            var movie = $(input).val();
+
+            schedule[0].events.push(movie);
+            $('#push').remove();
+            localStorage.setItem("choices", JSON.stringify(movie));
+            console.log(schedule[0].events)
+
+            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            $(".A").text(storedTodos);
+            $(".AA").addClass("1")
+            $(".AA").removeClass("AA")
+        });
+    });
+});
+$(document).on("click", ".2", function () {
+    
+    $('.B').each(function () {
+        var html = $(this).html();
+        var input = $('<input></input>');
+        input.val(html);
+        input.attr("id", "push")
+        $(this).html(input);
+
+        $(".2").addClass("BB");
+        $(".2").removeClass("2");
+
+        $(document).on("click", ".BB", function() {
+    
+            var movie = $(input).val();
+
+            schedule[1].events.push(movie);
+            $('#push').remove();
+            localStorage.setItem("choices", JSON.stringify(movie));
+            console.log(schedule[1].events)
+
+            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            $(".B").text(storedTodos);
+            $(".BB").addClass("2")
+            $(".BB").removeClass("BB")
+        });
+    });
+});
+$(document).on("click", ".3", function () {
+    
+    $('.C').each(function () {
+        var html = $(this).html();
+        var input = $('<input></input>');
+        input.val(html);
+        input.attr("id", "push")
+        $(this).html(input);
+
+        $(".3").addClass("CC");
+        $(".3").removeClass("3");
+
+        $(document).on("click", ".CC", function() {
+    
+            var movie = $(input).val();
+
+            schedule[2].events.push(movie);
+            $('#push').remove();
+            localStorage.setItem("choices", JSON.stringify(movie));
+            console.log(schedule[2].events)
+
+            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            $(".C").text(storedTodos);
+            $(".CC").addClass("3")
+            $(".CC").removeClass("CC")
+        });
+    });
+});
+$(document).on("click", ".4", function () {
+    
+    $('.D').each(function () {
+        var html = $(this).html();
+        var input = $('<input></input>');
+        input.val(html);
+        input.attr("id", "push")
+        $(this).html(input);
+
+        $(".4").addClass("DD");
+        $(".4").removeClass("4");
+
+        $(document).on("click", ".DD", function() {
+    
+            var movie = $(input).val();
+
+            schedule[3].events.push(movie);
+            $('#push').remove();
+            localStorage.setItem("choices", JSON.stringify(movie));
+            console.log(schedule[3].events)
+
+            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            $(".D").text(storedTodos);
+            $(".DD").addClass("4")
+            $(".DD").removeClass("DD")
+        });
+    });
+});
+$(document).on("click", ".5", function () {
+    
+    $('.E').each(function () {
+        var html = $(this).html();
+        var input = $('<input></input>');
+        input.val(html);
+        input.attr("id", "push")
+        $(this).html(input);
+
+        $(".5").addClass("EE");
+        $(".5").removeClass("5");
+
+        $(document).on("click", ".EE", function() {
+    
+            var movie = $(input).val();
+
+            schedule[4].events.push(movie);
+            $('#push').remove();
+            localStorage.setItem("choices", JSON.stringify(movie));
+            console.log(schedule[4].events)
+
+            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            $(".E").text(storedTodos);
+            $(".EE").addClass("5")
+            $(".EE").removeClass("EE")
+        });
+    });
+});
+$(document).on("click", ".6", function () {
+    
+    $('.F').each(function () {
+        var html = $(this).html();
+        var input = $('<input></input>');
+        input.val(html);
+        input.attr("id", "push")
+        $(this).html(input);
+
+        $(".6").addClass("FF");
+        $(".6").removeClass("6");
+
+        $(document).on("click", ".FF", function() {
+    
+            var movie = $(input).val();
+
+            schedule[5].events.push(movie);
+            $('#push').remove();
+            localStorage.setItem("choices", JSON.stringify(movie));
+            console.log(schedule[5].events)
+
+            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            $(".F").text(storedTodos);
+            $(".FF").addClass("6")
+            $(".FF").removeClass("FF")
+        });
+    });
+}); 
+$(document).on("click", ".7", function () {
+    
+    $('.G').each(function () {
+        var html = $(this).html();
+        var input = $('<input></input>');
+        input.val(html);
+        input.attr("id", "push")
+        $(this).html(input);
+
+        $(".7").addClass("GG");
+        $(".7").removeClass("7");
+
+        $(document).on("click", ".GG", function() {
+    
+            var movie = $(input).val();
+
+            schedule[6].events.push(movie);
+            $('#push').remove();
+            localStorage.setItem("choices", JSON.stringify(movie));
+            console.log(schedule[6].events)
+
+            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            $(".G").text(storedTodos);
+            $(".GG").addClass("7")
+            $(".GG").removeClass("GG")
+        });
+    });
+});
+$(document).on("click", ".8", function () {
+    
+    $('.H').each(function () {
+        var html = $(this).html();
+        var input = $('<input></input>');
+        input.val(html);
+        input.attr("id", "push")
+        $(this).html(input);
+
+        $(".8").addClass("HH");
+        $(".8").removeClass("8");
+
+        $(document).on("click", ".HH", function() {
+    
+            var movie = $(input).val();
+
+            schedule[7].events.push(movie);
+            $('#push').remove();
+            localStorage.setItem("choices", JSON.stringify(movie));
+            console.log(schedule[7].events)
+
+            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            $(".H").text(storedTodos);
+            $(".HH").addClass("8")
+            $(".HH").removeClass("HH")
+        });
+    });
+}); 
+$(document).on("click", ".9", function () {
+    
+    $('.I').each(function () {
+        var html = $(this).html();
+        var input = $('<input></input>');
+        input.val(html);
+        input.attr("id", "push")
+        $(this).html(input);
+
+        $(".9").addClass("II");
+        $(".9").removeClass("9");
+
+        $(document).on("click", ".II", function() {
+    
+            var movie = $(input).val();
+
+            schedule[8].events.push(movie);
+            $('#push').remove();
+            localStorage.setItem("choices", JSON.stringify(movie));
+            console.log(schedule[8].events)
+
+            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            $(".I").text(storedTodos);
+            $(".II").addClass("9")
+            $(".II").removeClass("II")
+        });
+    });
+});       
+
+});
+function renderList() {
     
     for (var i = 0; i < schedule.length; i++) {
         
@@ -49,16 +307,21 @@ setInterval(update, 1000);
 
         var tr = $("<tr></tr>").text(todo);
         var td = $('<td></td>').text(toro);
+        var btnDiv = $('<div></div>')
         var editBtn = $('<button></button').text("Edit")
 
+        btnDiv.attr("id", "btnBack")
         tr.attr("id", "ZYXWVUTSRQ" [i]);
         td.addClass("ABCDEFGHI" [i]);
         editBtn.addClass("123456789" [i]);
-        tr.appendTo(planTable);
+        
+        $(".mainTable").append(tr);
         td.appendTo(tr);
-        editBtn.appendTo(tr);    
+        btnDiv.appendTo(tr)
+        editBtn.appendTo(btnDiv);    
     }
-});
+}
+   
 $(document).ready(function() {
     
     NOW = moment().format("H");

@@ -1,7 +1,7 @@
 var schedule = [
     {
       timeSlot:"9:00 AM",
-      events: ["Smoking Cigerettes", "replaced by the refridgerated car", "climbed a cactus to the stars", "went underground"],
+      events: ["Smoking Cigerettes replaced by the refridgerated car climbed a cactus to the stars went underground"],
       answer: "replaced by the refridgerated car"
     },
     {
