@@ -62,11 +62,11 @@ $(document).on("click", ".1", function () {
 
             schedule[0].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[0].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("events"));
-            $(".A").text(storedTodos);
+
+            $(".A").text(schedule[0].events);
             $(".AA").addClass("1")
             $(".AA").removeClass("AA")
         });
@@ -90,11 +90,10 @@ $(document).on("click", ".2", function () {
 
             schedule[1].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[1].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("events"));
-            $(".B").text(storedTodos);
+            $(".B").text(schedule[1].events);
             $(".BB").addClass("2")
             $(".BB").removeClass("BB")
         });
@@ -118,11 +117,11 @@ $(document).on("click", ".3", function () {
 
             schedule[2].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[2].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("events"));
-            $(".C").text(storedTodos);
+        
+            $(".C").text(schedule[2].events);
             $(".CC").addClass("3")
             $(".CC").removeClass("CC")
         });
@@ -146,11 +145,10 @@ $(document).on("click", ".4", function () {
 
             schedule[3].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[3].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("events"));
-            $(".D").text(storedTodos);
+            $(".D").text(schedule[3].events);
             $(".DD").addClass("4")
             $(".DD").removeClass("DD")
         });
@@ -174,11 +172,11 @@ $(document).on("click", ".5", function () {
 
             schedule[4].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[4].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("events"));
-            $(".E").text(storedTodos);
+
+            $(".E").text(schedule[4].events);
             $(".EE").addClass("5")
             $(".EE").removeClass("EE")
         });
@@ -202,11 +200,11 @@ $(document).on("click", ".6", function () {
 
             schedule[5].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[5].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("events"));
-            $(".F").text(storedTodos);
+            
+            $(".F").text(schedule[5].events);
             $(".FF").addClass("6")
             $(".FF").removeClass("FF")
         });
@@ -230,11 +228,11 @@ $(document).on("click", ".7", function () {
 
             schedule[6].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[6].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("events"));
-            $(".G").text(storedTodos);
+        
+            $(".G").text(schedule[6].events);
             $(".GG").addClass("7")
             $(".GG").removeClass("GG")
         });
@@ -258,11 +256,11 @@ $(document).on("click", ".8", function () {
 
             schedule[7].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[7].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("events"));
-            $(".H").text(storedTodos);
+    
+            $(".H").text(schedule[7].events);
             $(".HH").addClass("8")
             $(".HH").removeClass("HH")
         });
@@ -286,11 +284,11 @@ $(document).on("click", ".9", function () {
 
             schedule[8].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[8].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("events"));
-            $(".I").text(storedTodos);
+            
+            $(".I").text(schedule[8].events);
             $(".II").addClass("9")
             $(".II").removeClass("II")
         });
@@ -301,9 +299,14 @@ $(document).on("click", ".9", function () {
 function renderList() {
     
     for (var i = 0; i < schedule.length; i++) {
+
+        var storedTodos = JSON.parse(localStorage.getItem("events")) || [];
         
         var todo = schedule[i].timeSlot;
-        var toro = schedule[i].events;
+        var toro = storedTodos[i].events;
+
+        console.log(storedTodos[4])
+    
 
         var tr = $("<tr></tr>").text(todo);
         var td = $('<td></td>').text(toro);
@@ -329,7 +332,7 @@ $(document).ready(function() {
     var row1 = $("#Z");
 
     $("#Z").hover(function() {
-        row1.animate({ height: "100px" });
+        row1.animate({ height: "50px" });
     }, function() {
         row1.animate({height:""});
     })
@@ -343,7 +346,7 @@ $(document).ready(function() {
     var row2 = $("#Y");
 
     $("#Y").hover(function() {
-        row2.animate({ height: "100px" });
+        row2.animate({ height: "50px" });
     }, function() {
         row2.animate({height:""});
     })
@@ -357,7 +360,7 @@ $(document).ready(function() {
    var row3 = $("#X");
 
     $("#X").hover(function() {
-        row3.animate({ height: "100px" });
+        row3.animate({ height: "50px" });
     }, function() {
         row3.animate({height:""});
     })
@@ -371,7 +374,7 @@ $(document).ready(function() {
     var row4 = $("#W");
 
     $("#W").hover(function() {
-        row4.animate({ height: "100px" });
+        row4.animate({ height: "50px" });
     }, function() {
         row4.animate({height:""});
     })
@@ -385,7 +388,7 @@ $(document).ready(function() {
     var row5 = $("#V");
 
     $("#V").hover(function() {
-        row5.animate({ height: "100px" });
+        row5.animate({ height: "50px" });
     }, function() {
         row5.animate({height:""});
     })
@@ -399,7 +402,7 @@ $(document).ready(function() {
     var row6 = $("#U");
 
     $("#U").hover(function() {
-        row6.animate({ height: "100px" });
+        row6.animate({ height: "50px" });
     }, function() {
         row6.animate({height:""});
     })
@@ -413,7 +416,7 @@ $(document).ready(function() {
     var row7 = $("#T");
 
     $("#T").hover(function() {
-        row7.animate({ height: "100px" });
+        row7.animate({ height: "50px" });
     }, function() {
         row7.animate({height:""});
     })
@@ -427,7 +430,7 @@ $(document).ready(function() {
     var row8 = $("#S");
 
     $("#S").hover(function() {
-        row8.animate({ height: "100px" });
+        row8.animate({ height: "50px" });
     }, function() {
         row8.animate({height:""});
     })
@@ -441,7 +444,7 @@ $(document).ready(function() {
     var row9 = $("#R");
 
     $("#R").hover(function() {
-        row9.animate({ height: "100px" });
+        row9.animate({ height: "50px" });
     }, function() {
         row9.animate({height:""});
     })
@@ -455,7 +458,7 @@ $(document).ready(function() {
     var row10 = $("#Q");
 
     $("#Q").hover(function() {
-        row10.animate({ height: "100px" });
+        row10.animate({ height: "50px" });
     }, function() {
         row10.animate({height:""});
     })
