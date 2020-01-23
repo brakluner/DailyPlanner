@@ -61,6 +61,7 @@ $(document).on("click", ".1", function () {
             var movie = $(input).val();
 
             schedule[0].events.push(movie);
+            schedule[0].events.shift();
             $('#push').remove();
             localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[0].events)
@@ -89,6 +90,7 @@ $(document).on("click", ".2", function () {
             var movie = $(input).val();
 
             schedule[1].events.push(movie);
+            schedule[1].events.shift();
             $('#push').remove();
             localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[1].events)
@@ -116,6 +118,7 @@ $(document).on("click", ".3", function () {
             var movie = $(input).val();
 
             schedule[2].events.push(movie);
+            schedule[2].events.shift();
             $('#push').remove();
             localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[2].events)
@@ -144,6 +147,7 @@ $(document).on("click", ".4", function () {
             var movie = $(input).val();
 
             schedule[3].events.push(movie);
+            schedule[3].events.shift();
             $('#push').remove();
             localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[3].events)
@@ -171,6 +175,7 @@ $(document).on("click", ".5", function () {
             var movie = $(input).val();
 
             schedule[4].events.push(movie);
+            schedule[4].events.shift();
             $('#push').remove();
             localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[4].events)
@@ -199,6 +204,7 @@ $(document).on("click", ".6", function () {
             var movie = $(input).val();
 
             schedule[5].events.push(movie);
+            schedule[5].events.shift();
             $('#push').remove();
             localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[5].events)
@@ -227,6 +233,7 @@ $(document).on("click", ".7", function () {
             var movie = $(input).val();
 
             schedule[6].events.push(movie);
+            schedule[6].events.shift();
             $('#push').remove();
             localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[6].events)
@@ -255,6 +262,7 @@ $(document).on("click", ".8", function () {
             var movie = $(input).val();
 
             schedule[7].events.push(movie);
+            schedule[7].events.shift();
             $('#push').remove();
             localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[7].events)
@@ -283,6 +291,7 @@ $(document).on("click", ".9", function () {
             var movie = $(input).val();
 
             schedule[8].events.push(movie);
+            schedule[8].events.shift();
             $('#push').remove();
             localStorage.setItem("events", JSON.stringify(schedule));
             console.log(schedule[8].events)
