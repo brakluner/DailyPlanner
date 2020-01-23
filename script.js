@@ -62,10 +62,10 @@ $(document).on("click", ".1", function () {
 
             schedule[0].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("choices", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(movie));
             console.log(schedule[0].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            var storedTodos = JSON.parse(localStorage.getItem("events"));
             $(".A").text(storedTodos);
             $(".AA").addClass("1")
             $(".AA").removeClass("AA")
@@ -90,10 +90,10 @@ $(document).on("click", ".2", function () {
 
             schedule[1].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("choices", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(movie));
             console.log(schedule[1].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            var storedTodos = JSON.parse(localStorage.getItem("events"));
             $(".B").text(storedTodos);
             $(".BB").addClass("2")
             $(".BB").removeClass("BB")
@@ -118,10 +118,10 @@ $(document).on("click", ".3", function () {
 
             schedule[2].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("choices", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(movie));
             console.log(schedule[2].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            var storedTodos = JSON.parse(localStorage.getItem("events"));
             $(".C").text(storedTodos);
             $(".CC").addClass("3")
             $(".CC").removeClass("CC")
@@ -146,10 +146,10 @@ $(document).on("click", ".4", function () {
 
             schedule[3].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("choices", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(movie));
             console.log(schedule[3].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            var storedTodos = JSON.parse(localStorage.getItem("events"));
             $(".D").text(storedTodos);
             $(".DD").addClass("4")
             $(".DD").removeClass("DD")
@@ -174,10 +174,10 @@ $(document).on("click", ".5", function () {
 
             schedule[4].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("choices", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(movie));
             console.log(schedule[4].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            var storedTodos = JSON.parse(localStorage.getItem("events"));
             $(".E").text(storedTodos);
             $(".EE").addClass("5")
             $(".EE").removeClass("EE")
@@ -202,10 +202,10 @@ $(document).on("click", ".6", function () {
 
             schedule[5].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("choices", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(movie));
             console.log(schedule[5].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            var storedTodos = JSON.parse(localStorage.getItem("events"));
             $(".F").text(storedTodos);
             $(".FF").addClass("6")
             $(".FF").removeClass("FF")
@@ -230,10 +230,10 @@ $(document).on("click", ".7", function () {
 
             schedule[6].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("choices", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(movie));
             console.log(schedule[6].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            var storedTodos = JSON.parse(localStorage.getItem("events"));
             $(".G").text(storedTodos);
             $(".GG").addClass("7")
             $(".GG").removeClass("GG")
@@ -258,10 +258,10 @@ $(document).on("click", ".8", function () {
 
             schedule[7].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("choices", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(movie));
             console.log(schedule[7].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            var storedTodos = JSON.parse(localStorage.getItem("events"));
             $(".H").text(storedTodos);
             $(".HH").addClass("8")
             $(".HH").removeClass("HH")
@@ -286,10 +286,10 @@ $(document).on("click", ".9", function () {
 
             schedule[8].events.push(movie);
             $('#push').remove();
-            localStorage.setItem("choices", JSON.stringify(movie));
+            localStorage.setItem("events", JSON.stringify(movie));
             console.log(schedule[8].events)
 
-            var storedTodos = JSON.parse(localStorage.getItem("choices"));
+            var storedTodos = JSON.parse(localStorage.getItem("events"));
             $(".I").text(storedTodos);
             $(".II").addClass("9")
             $(".II").removeClass("II")
