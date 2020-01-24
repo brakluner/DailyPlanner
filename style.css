@@ -17,3 +17,21 @@ button {
     color: #ff0fdd;
     background-color: #89fffc;
 }
+.displayDay {
+    font-size: 60px;
+    text-align: center;
+    float: left;
+}
+.displayDate {
+    font-size: 75px;
+    float: left;
+}
+.displayMonth,.displayYear {
+    font-size: 24px;
+}
+.clock {
+    font-size: 60px;
+}
+#logo {
+    padding: 0 0 0 300px;
+}

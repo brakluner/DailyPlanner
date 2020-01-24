@@ -27,11 +27,11 @@ $(document).ready(function() {
     nowTime.addClass("clock")
     planTable.attr("style", "width:100%")
 
-    $('body').append(dayDisplay);
-    $('body').append(dateDisplay);
-    $('body').append(monthDisplay);
-    $('body').append(yearDisplay);
-    $('body').append(nowTime);
+    $('#logo').append(dayDisplay);
+    $('#logo').append(dateDisplay);
+    $('#logo').append(monthDisplay);
+    $('#logo').append(yearDisplay);
+    $('#logo').append(nowTime);
     $('body').append(planTable);
     $(planTable).append(thead1);
     $(planTable).append(thead2);
