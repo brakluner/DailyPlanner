@@ -46,7 +46,7 @@ setInterval(update, 1000);
 
 renderList()
 
-$(document).on("click", ".A", function () {
+$(document).on("click", ".1", function () {
     
     $('.A').each(function () {
         var html = $(this).html();
@@ -73,7 +73,7 @@ $(document).on("click", ".A", function () {
         });
     });
 });
-$(document).on("click", ".B", function () {
+$(document).on("click", ".2", function () {
     
     $('.B').each(function () {
         var html = $(this).html();
@@ -100,7 +100,7 @@ $(document).on("click", ".B", function () {
         });
     });
 });
-$(document).on("click", ".C", function () {
+$(document).on("click", ".3", function () {
     
     $('.C').each(function () {
         var html = $(this).html();
@@ -127,7 +127,7 @@ $(document).on("click", ".C", function () {
         });
     });
 });
-$(document).on("click", ".D", function () {
+$(document).on("click", ".4", function () {
     
     $('.D').each(function () {
         var html = $(this).html();
@@ -153,7 +153,7 @@ $(document).on("click", ".D", function () {
         });
     });
 });
-$(document).on("click", ".E", function () {
+$(document).on("click", ".5", function () {
     
     $('.E').each(function () {
         var html = $(this).html();
@@ -181,7 +181,7 @@ $(document).on("click", ".E", function () {
         });
     });
 });
-$(document).on("click", ".F", function () {
+$(document).on("click", ".6", function () {
     
     $('.F').each(function () {
         var html = $(this).html();
@@ -209,7 +209,7 @@ $(document).on("click", ".F", function () {
         });
     });
 }); 
-$(document).on("click", ".G", function () {
+$(document).on("click", ".7", function () {
     
     $('.G').each(function () {
         var html = $(this).html();
@@ -237,7 +237,7 @@ $(document).on("click", ".G", function () {
         });
     });
 });
-$(document).on("click", ".H", function () {
+$(document).on("click", ".8", function () {
     
     $('.H').each(function () {
         var html = $(this).html();
@@ -264,7 +264,7 @@ $(document).on("click", ".H", function () {
         });
     });
 }); 
-$(document).on("click", ".I", function () {
+$(document).on("click", ".9", function () {
     
     $('.I').each(function () {
         var html = $(this).html();
