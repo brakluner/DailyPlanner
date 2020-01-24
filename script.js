@@ -46,7 +46,7 @@ setInterval(update, 1000);
 
 renderList()
 
-$(document).on("click", ".1", function () {
+$(document).on("click", ".A", function () {
     
     $('.A').each(function () {
         var html = $(this).html();
@@ -55,10 +55,11 @@ $(document).on("click", ".1", function () {
         input.attr("id", "push")
         $(this).html(input);
 
-        $(".1").addClass("AA");
-        $(".1").removeClass("1");
+        $(".A").addClass("AA")
+        $(".A").removeClass("A");
+        
 
-        $(document).on("click", ".AA", function() {
+        $(document).on("click", ".1", function() {
     
             var movie = $(input).val();
 
@@ -66,14 +67,14 @@ $(document).on("click", ".1", function () {
             $('#push').remove();
             localStorage.setItem("events", JSON.stringify(storedTodos));
 
-
+            $(".AA").addClass("A")
+            $(".A").removeClass("AA")
             $(".A").text(storedTodos[0].events);
-            $(".AA").addClass("1")
-            $(".AA").removeClass("AA")
+
         });
     });
 });
-$(document).on("click", ".2", function () {
+$(document).on("click", ".B", function () {
     
     $('.B').each(function () {
         var html = $(this).html();
@@ -82,10 +83,10 @@ $(document).on("click", ".2", function () {
         input.attr("id", "push")
         $(this).html(input);
 
-        $(".2").addClass("BB");
-        $(".2").removeClass("2");
+        $(".B").addClass("BB");
+        $(".B").removeClass("B");
 
-        $(document).on("click", ".BB", function() {
+        $(document).on("click", ".2", function() {
     
             var movie = $(input).val();
 
@@ -93,14 +94,13 @@ $(document).on("click", ".2", function () {
             $('#push').remove();
             localStorage.setItem("events", JSON.stringify(storedTodos));
             
-
+            $(".BB").addClass("B")
+            $(".B").removeClass("BB")
             $(".B").text(storedTodos[1].events);
-            $(".BB").addClass("2")
-            $(".BB").removeClass("BB")
         });
     });
 });
-$(document).on("click", ".3", function () {
+$(document).on("click", ".C", function () {
     
     $('.C').each(function () {
         var html = $(this).html();
@@ -109,10 +109,10 @@ $(document).on("click", ".3", function () {
         input.attr("id", "push")
         $(this).html(input);
 
-        $(".3").addClass("CC");
-        $(".3").removeClass("3");
+        $(".C").addClass("CC");
+        $(".C").removeClass("C");
 
-        $(document).on("click", ".CC", function() {
+        $(document).on("click", ".3", function() {
     
             var movie = $(input).val();
 
@@ -120,14 +120,14 @@ $(document).on("click", ".3", function () {
             $('#push').remove();
             localStorage.setItem("events", JSON.stringify(storedTodos));
 
-        
+            $(".CC").addClass("C")
+            $(".C").removeClass("CC")
             $(".C").text(storedTodos[2].events);
-            $(".CC").addClass("3")
-            $(".CC").removeClass("CC")
+            
         });
     });
 });
-$(document).on("click", ".4", function () {
+$(document).on("click", ".D", function () {
     
     $('.D').each(function () {
         var html = $(this).html();
@@ -136,10 +136,10 @@ $(document).on("click", ".4", function () {
         input.attr("id", "push")
         $(this).html(input);
 
-        $(".4").addClass("DD");
-        $(".4").removeClass("4");
+        $(".D").addClass("DD");
+        $(".D").removeClass("D");
 
-        $(document).on("click", ".DD", function() {
+        $(document).on("click", ".4", function() {
     
             var movie = $(input).val();
 
@@ -147,13 +147,14 @@ $(document).on("click", ".4", function () {
             $('#push').remove();
             localStorage.setItem("events", JSON.stringify(storedTodos));
 
+            $(".DD").addClass("D")
+            $(".D").removeClass("DD")
             $(".D").text(storedTodos[3].events);
-            $(".DD").addClass("4")
-            $(".DD").removeClass("DD")
+            
         });
     });
 });
-$(document).on("click", ".5", function () {
+$(document).on("click", ".E", function () {
     
     $('.E').each(function () {
         var html = $(this).html();
@@ -162,10 +163,10 @@ $(document).on("click", ".5", function () {
         input.attr("id", "push")
         $(this).html(input);
 
-        $(".5").addClass("EE");
-        $(".5").removeClass("5");
+        $(".E").addClass("EE");
+        $(".E").removeClass("E");
 
-        $(document).on("click", ".EE", function() {
+        $(document).on("click", ".5", function() {
     
             var movie = $(input).val();
 
@@ -174,14 +175,14 @@ $(document).on("click", ".5", function () {
             localStorage.setItem("events", JSON.stringify(storedTodos));
             
 
-
+            $(".EE").addClass("E")
+            $(".E").removeClass("EE")
             $(".E").text(storedTodos[4].events);
-            $(".EE").addClass("5")
-            $(".EE").removeClass("EE")
+            
         });
     });
 });
-$(document).on("click", ".6", function () {
+$(document).on("click", ".F", function () {
     
     $('.F').each(function () {
         var html = $(this).html();
@@ -190,10 +191,10 @@ $(document).on("click", ".6", function () {
         input.attr("id", "push")
         $(this).html(input);
 
-        $(".6").addClass("FF");
-        $(".6").removeClass("6");
+        $(".F").addClass("FF");
+        $(".F").removeClass("F");
 
-        $(document).on("click", ".FF", function() {
+        $(document).on("click", ".6", function() {
     
             var movie = $(input).val();
 
@@ -202,14 +203,14 @@ $(document).on("click", ".6", function () {
             localStorage.setItem("events", JSON.stringify(storedTodos));
             
 
-            
+            $(".FF").addClass("F")
+            $(".F").removeClass("FF")
             $(".F").text(storedTodos[5].events);
-            $(".FF").addClass("6")
-            $(".FF").removeClass("FF")
+            
         });
     });
 }); 
-$(document).on("click", ".7", function () {
+$(document).on("click", ".G", function () {
     
     $('.G').each(function () {
         var html = $(this).html();
@@ -218,10 +219,10 @@ $(document).on("click", ".7", function () {
         input.attr("id", "push")
         $(this).html(input);
 
-        $(".7").addClass("GG");
-        $(".7").removeClass("7");
+        $(".G").addClass("GG");
+        $(".G").removeClass("G");
 
-        $(document).on("click", ".GG", function() {
+        $(document).on("click", ".7", function() {
     
             var movie = $(input).val();
 
@@ -230,14 +231,14 @@ $(document).on("click", ".7", function () {
             localStorage.setItem("events", JSON.stringify(storedTodos));
         
 
-        
+            $(".GG").addClass("G")
+            $(".G").removeClass("GG")
             $(".G").text(storedTodos[6].events);
-            $(".GG").addClass("7")
-            $(".GG").removeClass("GG")
+           
         });
     });
 });
-$(document).on("click", ".8", function () {
+$(document).on("click", ".H", function () {
     
     $('.H').each(function () {
         var html = $(this).html();
@@ -246,10 +247,10 @@ $(document).on("click", ".8", function () {
         input.attr("id", "push")
         $(this).html(input);
 
-        $(".8").addClass("HH");
-        $(".8").removeClass("8");
+        $(".H").addClass("HH");
+        $(".H").removeClass("H");
 
-        $(document).on("click", ".HH", function() {
+        $(document).on("click", ".8", function() {
     
             var movie = $(input).val();
 
@@ -257,14 +258,14 @@ $(document).on("click", ".8", function () {
             $('#push').remove();
             localStorage.setItem("events", JSON.stringify(storedTodos));
 
-    
+            $(".HH").addClass("H")
+            $(".H").removeClass("HH")
             $(".H").text(storedTodos[7].events);
-            $(".HH").addClass("8")
-            $(".HH").removeClass("HH")
+            
         });
     });
 }); 
-$(document).on("click", ".9", function () {
+$(document).on("click", ".I", function () {
     
     $('.I').each(function () {
         var html = $(this).html();
@@ -273,10 +274,10 @@ $(document).on("click", ".9", function () {
         input.attr("id", "push")
         $(this).html(input);
 
-        $(".9").addClass("II");
-        $(".9").removeClass("9");
+        $(".I").addClass("II");
+        $(".I").removeClass("I");
 
-        $(document).on("click", ".II", function() {
+        $(document).on("click", ".9", function() {
     
             var movie = $(input).val();
 
@@ -284,10 +285,10 @@ $(document).on("click", ".9", function () {
             $('#push').remove();
             localStorage.setItem("events", JSON.stringify(storedTodos));
 
-            
+            $(".II").addClass("I")
+            $(".I").removeClass("II") 
             $(".I").text(storedTodos[8].events);
-            $(".II").addClass("9")
-            $(".II").removeClass("II")
+           
         });
     });
 });       
@@ -315,7 +316,7 @@ function renderList() {
         var tr = $("<tr></tr>").text(todo);
         var td = $('<td></td>').text(toro);
         var btnDiv = $('<div></div>')
-        var editBtn = $('<button></button').text("Edit")
+        var editBtn = $('<button></button').text("Submit Changes!")
 
         btnDiv.attr("id", "btnBack")
         tr.attr("id", "ZYXWVUTSRQ" [i]);
