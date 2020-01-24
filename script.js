@@ -1,3 +1,4 @@
+var storedTodos = []
 $(document).ready(function() {
 
     var nowDay = moment().format("dddd");
@@ -36,6 +37,7 @@ $(document).ready(function() {
     $(planTable).append(thead2);
     $(planTable).append(thead3);
 
+
 function update() {
   $('.clock').html(moment().format('H:mm:ss a'));
 }
@@ -60,14 +62,12 @@ $(document).on("click", ".1", function () {
     
             var movie = $(input).val();
 
-            schedule[0].events.push(movie);
-            schedule[0].events.shift();
+            storedTodos[0].events = movie;
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(schedule));
-            console.log(schedule[0].events)
+            localStorage.setItem("events", JSON.stringify(storedTodos));
 
 
-            $(".A").text(schedule[0].events);
+            $(".A").text(storedTodos[0].events);
             $(".AA").addClass("1")
             $(".AA").removeClass("AA")
         });
@@ -89,13 +89,12 @@ $(document).on("click", ".2", function () {
     
             var movie = $(input).val();
 
-            schedule[1].events.push(movie);
-            schedule[1].events.shift();
+            storedTodos[1].events = movie;
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(schedule));
-            console.log(schedule[1].events)
+            localStorage.setItem("events", JSON.stringify(storedTodos));
+            
 
-            $(".B").text(schedule[1].events);
+            $(".B").text(storedTodos[1].events);
             $(".BB").addClass("2")
             $(".BB").removeClass("BB")
         });
@@ -117,14 +116,12 @@ $(document).on("click", ".3", function () {
     
             var movie = $(input).val();
 
-            schedule[2].events.push(movie);
-            schedule[2].events.shift();
+            storedTodos[2].events = movie;
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(schedule));
-            console.log(schedule[2].events)
+            localStorage.setItem("events", JSON.stringify(storedTodos));
 
         
-            $(".C").text(schedule[2].events);
+            $(".C").text(storedTodos[2].events);
             $(".CC").addClass("3")
             $(".CC").removeClass("CC")
         });
@@ -146,13 +143,11 @@ $(document).on("click", ".4", function () {
     
             var movie = $(input).val();
 
-            schedule[3].events.push(movie);
-            schedule[3].events.shift();
+            storedTodos[3].events = movie;
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(schedule));
-            console.log(schedule[3].events)
+            localStorage.setItem("events", JSON.stringify(storedTodos));
 
-            $(".D").text(schedule[3].events);
+            $(".D").text(storedTodos[3].events);
             $(".DD").addClass("4")
             $(".DD").removeClass("DD")
         });
@@ -174,14 +169,13 @@ $(document).on("click", ".5", function () {
     
             var movie = $(input).val();
 
-            schedule[4].events.push(movie);
-            schedule[4].events.shift();
+            storedTodos[4].events = movie;
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(schedule));
-            console.log(schedule[4].events)
+            localStorage.setItem("events", JSON.stringify(storedTodos));
+            
 
 
-            $(".E").text(schedule[4].events);
+            $(".E").text(storedTodos[4].events);
             $(".EE").addClass("5")
             $(".EE").removeClass("EE")
         });
@@ -203,14 +197,13 @@ $(document).on("click", ".6", function () {
     
             var movie = $(input).val();
 
-            schedule[5].events.push(movie);
-            schedule[5].events.shift();
+            storedTodos[5].events = movie;
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(schedule));
-            console.log(schedule[5].events)
+            localStorage.setItem("events", JSON.stringify(storedTodos));
+            
 
             
-            $(".F").text(schedule[5].events);
+            $(".F").text(storedTodos[5].events);
             $(".FF").addClass("6")
             $(".FF").removeClass("FF")
         });
@@ -232,14 +225,13 @@ $(document).on("click", ".7", function () {
     
             var movie = $(input).val();
 
-            schedule[6].events.push(movie);
-            schedule[6].events.shift();
+            storedTodos[6].events = movie;
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(schedule));
-            console.log(schedule[6].events)
+            localStorage.setItem("events", JSON.stringify(storedTodos));
+        
 
         
-            $(".G").text(schedule[6].events);
+            $(".G").text(storedTodos[6].events);
             $(".GG").addClass("7")
             $(".GG").removeClass("GG")
         });
@@ -261,14 +253,12 @@ $(document).on("click", ".8", function () {
     
             var movie = $(input).val();
 
-            schedule[7].events.push(movie);
-            schedule[7].events.shift();
+            storedTodos[7].events = movie;
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(schedule));
-            console.log(schedule[7].events)
+            localStorage.setItem("events", JSON.stringify(storedTodos));
 
     
-            $(".H").text(schedule[7].events);
+            $(".H").text(storedTodos[7].events);
             $(".HH").addClass("8")
             $(".HH").removeClass("HH")
         });
@@ -290,14 +280,12 @@ $(document).on("click", ".9", function () {
     
             var movie = $(input).val();
 
-            schedule[8].events.push(movie);
-            schedule[8].events.shift();
+            storedTodos[8].events = movie;
             $('#push').remove();
-            localStorage.setItem("events", JSON.stringify(schedule));
-            console.log(schedule[8].events)
+            localStorage.setItem("events", JSON.stringify(storedTodos));
 
             
-            $(".I").text(schedule[8].events);
+            $(".I").text(storedTodos[8].events);
             $(".II").addClass("9")
             $(".II").removeClass("II")
         });
@@ -306,12 +294,19 @@ $(document).on("click", ".9", function () {
 
 });
 function renderList() {
+        storedTodos = localStorage.getItem("events");
+        if (!storedTodos) {
+            storedTodos = defaultSchedule
+        } else {
+            storedTodos = JSON.parse(storedTodos)
+        }
     
-    for (var i = 0; i < schedule.length; i++) {
+    for (var i = 0; i < storedTodos.length; i++) {
 
-        var storedTodos = JSON.parse(localStorage.getItem("events")) || [];
         
-        var todo = schedule[i].timeSlot;
+        
+        
+        var todo = storedTodos[i].timeSlot;
         var toro = storedTodos[i].events;
 
         console.log(storedTodos[4])
