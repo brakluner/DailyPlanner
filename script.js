@@ -2,7 +2,7 @@ var storedTodos = []
 $(document).ready(function() {
 
     var nowDay = moment().format("dddd");
-    var nowDate = moment().format('do');
+    var nowDate = moment().format('Do');
     var nowMonth = moment().format("MMMM");
     var nowYear = moment().format("YYYY");
     var nowTime = moment().format('h:mm:ss a')
